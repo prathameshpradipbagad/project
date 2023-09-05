@@ -1,0 +1,92 @@
+<html>
+    <head>
+        <title>presenty of students</title>
+
+        <link rel="stylesheet" href="present.css">
+        <script>
+            var n=("0");
+            var p=("present");
+            var a=("absent");
+            var no=n;
+            var cnt=0;
+            var raw=res;
+            
+
+          function show1()
+          {
+            alert("Student is present");
+            document.getElementById("re").value=p;
+            document.getElementById("raw").value=n;
+           
+            }
+
+          function show2()
+          {
+              alert("Student is Absent");
+              document.getElementById("re").value=a;
+             document.getElementById("raw").value=n;
+           }
+
+          function move()
+          {
+            for(var i=n;i<=200;i++)
+            {
+              document.getElementById("res").value=n+1;
+            }n++;
+        }
+
+        function back()
+          {
+             for(var i=n;i<=n;i++)
+            {
+               document.getElementById("res").value=n-1;
+            }n--;
+        }
+
+
+
+        
+    
+    
+
+        
+          
+          
+
+        
+
+        </script>
+        <script src="my.js"></script>
+    </head>
+    <body>
+        <h1>Roll no:-<input type="text" class="but5" id="res"></h1>
+        <form>
+            
+            <button type="button" class="but1" onclick="back()">Preview</button>     
+            <button type="button" class="but2" onclick="show1()">P</button>
+            <button type="button" class="but3" onclick="show2()">A</button>   
+            <button type="button" class="but4" onclick="move()">Next</button>
+        
+        <font color="green"><h2>Total students :-</h2></font><input type="text" id="raw" class="tot">
+        <font color="green"><h2>Total Present students :-</h2></font><input type="text" id="r" class="tot">
+        <font color="green"><h2>Total Absent students :-</h2></font><input type="text" class="tot">
+        </form>
+<table border="1" align="center" ; margin-left: 2%;margin-top: 60%;>
+    
+        <tr>
+            
+            <tr><td>Roll no</td><td>Name of Student</td><td>Attendance</td></tr>
+          <tr> <td>1</td><td>Aakash dhangar</td><td><input type="text"  id="re" ></td></tr>
+           <tr> <td>2</td><td>Tushar bagad</td><td><input type="text"  id="re"></td></tr>
+           <tr> <td >3</td><td>Prathamesh bagad</td><td><input type="text"  id="re"></td></tr>
+           <tr> <td>4</td><td>Kunal Borse</td><td><input type="text"  id="re"></td></tr>
+           <tr> <td>5</td><td>Rohan waykar</td><td><input type="text"  id="re"></td></tr>
+           <tr> <td>6</td><td>sham bhagwat</td><td><input type="text"  id="re"></td></tr>
+           <tr> <td>6</td><td>Ram bhagwat</td><td><input type="text"  id="re"></td></tr>
+          </tr>
+        
+    </td>
+</table>
+    </body>
+    
+</html>
